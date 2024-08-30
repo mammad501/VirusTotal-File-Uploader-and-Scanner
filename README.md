@@ -1,28 +1,28 @@
 VirusTotal File Uploader
 
+Description
 
+This C++ program allows you to upload a file to VirusTotal and view the scan results. It helps you determine if your file is flagged as malicious by any antivirus engines.
 
+Dependencies
 
+libcurl: For handling HTTP requests.
+nlohmann/json: For parsing JSON responses.
+Installation (Linux)
 
-
-
-توضیحات
-این برنامه به زبان C++ نوشته شده و به شما امکان می‌دهد یک فایل را به VirusTotal آپلود کرده و نتایج اسکن آن را مشاهده کنید. با استفاده از این برنامه، می‌توانید بفهمید که آیا فایل شما توسط آنتی‌ویروس‌های مختلف به عنوان بدافزار شناسایی شده است یا خیر.
-
-وابستگی‌ها
-libcurl: برای ارسال درخواست‌های HTTP
-nlohmann/json: برای تجزیه JSON
-
-نصب (لینوکس)
 sudo apt-get install libcurl4-openssl-dev
 sudo apt-get install nlohmann-json3-dev
 
 
-استفاده
-برنامه را کامپایل و اجرا کنید.
-مسیر فایل موردنظر را وارد کنید.
-نتیجه اسکن به شما نمایش داده می‌شود:
-اگر فایل پاک باشد، پیام مناسب نمایش داده می‌شود.
-اگر فایل آلوده باشد، نام آنتی‌ویروس‌هایی که آن را شناسایی کرده‌اند نمایش داده می‌شود.
-نکته
-قبل از استفاده، کلید API خود را در کد جایگزین کنید.
+
+
+Usage
+
+Compile and run the program.
+Enter the path of the file you want to upload.
+The scan results will be displayed:
+If the file is clean, a suitable message will be shown.
+If the file is flagged as malicious, the names of the antivirus engines that detected it will be listed.
+Note
+
+Replace "YOUR_API_KEY" in the source code with your actual VirusTotal API key before using the program.
